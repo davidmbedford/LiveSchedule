@@ -1,12 +1,12 @@
 
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAEZBnUyr8p-OZRWWMegf5foXvsr6JdETw",
-    authDomain: "mar-28-project-one.firebaseapp.com",
-    databaseURL: "https://mar-28-project-one.firebaseio.com",
-    projectId: "mar-28-project-one",
-    storageBucket: "mar-28-project-one.appspot.com",
-    messagingSenderId: "647628320169"
+    apiKey: "AIzaSyAZuSMKcBu-lzKLuBNY0M8Eve_CpthUKls",
+    authDomain: "unit-7-train-schedule.firebaseapp.com",
+    databaseURL: "https://unit-7-train-schedule.firebaseio.com",
+    projectId: "unit-7-train-schedule",
+    storageBucket: "unit-7-train-schedule.appspot.com",
+    messagingSenderId: "124735987706"
   };
 
   firebase.initializeApp(config);
@@ -43,22 +43,22 @@ $(document).ready(function() {
   });
 
   // Firebase watcher + initial loader HINT: .on("value")
-database.ref().on("value", function(snapshot) {
+database.ref().on("child_added", function(childSnapshot) {
   event.preventDefault();
-  console.log(snapshot.val());
+  console.log(childSnapshot.val());
 
-    var name = snapshot.val().name;
-    var dest = snapshot.val().destination;
-    var time = snapshot.val().time;
-    var freq = snapshot.val().frequency;
+    var name = childSnapshot.val().name;
+    var dest = childSnapshot.val().destination;
+    var time = childSnapshot.val().time;
+    var freq = childSnapshot.val().frequency;
 
-    console.log(name);
-    console.log(dest);
-    console.log(time);
-    console.log(freq);
+    console.log("name", name);
+    console.log("dest", dest);
+    console.log("time", time);
+    console.log("freq", freq);
 
     var timeConverted = moment(time, "HH:mm").subtract(1, "years");
-    console.log(timeConverted);
+    console.log("timeConverted", timeConverted);
 
     var currentTime = moment();
     console.log("current time: " + moment(currentTime).format("hh:mm"));
@@ -67,7 +67,7 @@ database.ref().on("value", function(snapshot) {
     console.log("Difference in time: " + diffTime);
 
     var timeRemainder = diffTime % freq;
-    console.log(timeRemainder);
+    console.log("timeRemainder", timeRemainder);
 
     var tMinsTilTrain = freq - timeRemainder;
     console.log("Minutes until next train: " + tMinsTilTrain);
