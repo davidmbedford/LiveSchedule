@@ -8,3 +8,5 @@ This project uses Firebase (API) coupled with ajax (JS/jQuery) to create a train
 ### Tools: 
 * Firebase
 * Moment.js
+
+This app was created by davidmbedford. 
