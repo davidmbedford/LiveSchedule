@@ -1,10 +1,10 @@
-#train-head,
-#current {
+#input-head,
+#current-head {
   background-color: thistle;
 }
 
 #banner {
-  background-color: paleturquoise;
+  background-image: url("../images/train.jpg");
 }
 
 body {
