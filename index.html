@@ -19,11 +19,11 @@
         <div class="container">
             <div class="row">
             <div class="col s12">
-              <h1 class="center">Live Scheduler</h1>
+              <h1 class="center">Live Schedule</h1>
               <h3 class="center maintext">Train Edition</h3>
-              <p>Welcome to our live-updating schdule application! Live Schedule utilizes firebase to store information on different trains, 
-                including frequency of arrival. Using the simple powers of jQuery, the app will calculate new arrivals live. 
-                This application can easily be refactored to suit whatever schedule you need to keep!</p>
+              <p>Welcome to our live-updating schedule application! Live Schedule utilizes Firebase's powerful API technology to store information, enabling us to keep track of countless trains at once. 
+                Using the simple powers of jQuery, the app will calculate new arrivals in real-time. Go ahead and add a new train!</p> 
+              <p>This application can easily be refactored to suit whatever schedule you need to keep!</p>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
               <label for="frequency-input">Frequency (min):</label>
               <input class="form-control" id="freq-input" type="number">
             </div>
-            <button class="btn btn-primary" id="add-train">Submit</button>
+            <button class="btn" id="add-train">Submit</button>
           </form>
         </div>
       </div>
@@ -94,7 +94,22 @@
     </div>
 </div>
 
-  <br>
+
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Live Scheduler</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2019 Copyright 
+      <a class="grey-text text-lighten-4 right" href="#!">My Github</a>
+      </div>
+    </div>
+  </footer>
   <!--jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--moment.js-->

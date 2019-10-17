@@ -15,6 +15,27 @@ tbody {
   font-family: 'Oswald', sans-serif;
 }
 
+body {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+button {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
+  font-family: 'Oswald', sans-serif;
+}
+
+.page-footer {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(117, 20, 7));
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copyright {
+  padding-bottom: 10px;
+  background-image: linear-gradient(120deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
+}
+
 .card {
   border: 0;
 }
@@ -28,25 +49,16 @@ tbody {
 .background {
   background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 0;
   z-index: -2;
 }
 
 .layer {
-     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3); 
-     padding: 20px;
+  background-image: linear-gradient(180deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   z-index: -1;
 }
-
-/* .layer {
-  background-color: rgba(81, 81, 81, 0.7);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 /* parralax to override materialize.css */
 
