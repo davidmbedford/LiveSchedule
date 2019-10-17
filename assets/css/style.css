@@ -1,12 +1,56 @@
 #input-head,
 #current-head {
-  background-color: thistle;
+  background-color: rgb(160, 57, 57);
 }
 
-#banner {
-  background-image: url("../images/train.jpg");
+h1,
+h3 {
+  font-family: 'Fascinate Inline', cursive;
+}
+
+p,
+th,
+label,
+tbody {
+  font-family: 'Oswald', sans-serif;
+}
+
+.card-header {
+  font-family: 'Alfa Slab One', cursive;
 }
 
 body {
-  background-color: rgb(241, 215, 180);
+  background-image: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
 }
+
+/* parralax to override materialize.css */
+
+/* ////////// so the main header is large, and adjusts for phone screens */
+#parallax-main {
+  height: 70vh;
+  color: white;
+  font-weight: bold;
+
+}
+
+@media only screen and (max-width: 450px) {
+  #parallax-main {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 5vh;
+  }
+
+  h3.maintext {
+    font-size: 3vh;
+  }
+}
+
+/* ////////// so the image always fills the para-container and does not distort */
+.parallax-container .parallax img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+} 
+
