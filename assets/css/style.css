@@ -1,6 +1,6 @@
 #input-head,
 #current-head {
-  background-color: rgb(160, 57, 57);
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
 }
 
 h1,
@@ -15,9 +15,14 @@ tbody {
   font-family: 'Oswald', sans-serif;
 }
 
+.card {
+  border: 0;
+}
+
 .card-header {
   font-family: 'Alfa Slab One', cursive;
   font-size: 2rem;
+  text-shadow: 2px 1px 1px #dfdfdf;
 }
 
 .background {
