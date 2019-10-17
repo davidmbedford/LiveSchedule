@@ -4,14 +4,16 @@
 }
 
 h1,
-h3 {
+h3,
+h5 {
   font-family: 'Fascinate Inline', cursive;
 }
 
 p,
 th,
 label,
-tbody {
+tbody,
+footer {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -69,20 +71,6 @@ button {
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000;
 
-}
-
-@media only screen and (max-width: 450px) {
-  #parallax-main {
-    height: 60vh;
-  }
-
-  h1 {
-    font-size: 5vh;
-  }
-
-  h3.maintext {
-    font-size: 3vh;
-  }
 }
 
 /* ////////// so the image always fills the para-container and does not distort */
