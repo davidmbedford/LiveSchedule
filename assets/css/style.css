@@ -1,12 +1,82 @@
-#train-head,
-#current {
-  background-color: thistle;
+#input-head,
+#current-head {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
 }
 
-#banner {
-  background-color: paleturquoise;
+h1,
+h3 {
+  font-family: 'Fascinate Inline', cursive;
 }
 
-body {
-  background-color: rgb(241, 215, 180);
+p,
+th,
+label,
+tbody {
+  font-family: 'Oswald', sans-serif;
 }
+
+.card {
+  border: 0;
+}
+
+.card-header {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 2px 1px 1px #dfdfdf;
+}
+
+.background {
+  background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: -2;
+}
+
+.layer {
+     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3); 
+     padding: 20px;
+  z-index: -1;
+}
+
+/* .layer {
+  background-color: rgba(81, 81, 81, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* parralax to override materialize.css */
+
+/* ////////// so the main header is large, and adjusts for phone screens */
+#parallax-main {
+  height: 70vh;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+@media only screen and (max-width: 450px) {
+  #parallax-main {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 5vh;
+  }
+
+  h3.maintext {
+    font-size: 3vh;
+  }
+}
+
+/* ////////// so the image always fills the para-container and does not distort */
+.parallax-container .parallax img {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+} 
+
