@@ -20,8 +20,20 @@ body {
   margin: 0;
 }
 
-footer {
+button {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
+  font-family: 'Oswald', sans-serif;
+}
+
+.page-footer {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(117, 20, 7));
+  margin: 0;
+  padding: 0;
+}
+
+.footer-copyright {
   padding-bottom: 10px;
+  background-image: linear-gradient(120deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
 }
 
 .card {
@@ -46,7 +58,6 @@ footer {
   padding-top: 10vh;
   padding-bottom: 10vh;
   z-index: -1;
-
 }
 
 /* parralax to override materialize.css */
