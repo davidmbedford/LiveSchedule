@@ -1,8 +1,4 @@
-#input-head,
-#current-head {
-  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
-}
-
+/*  General Fonts */
 h1,
 h3,
 h5 {
@@ -17,9 +13,34 @@ footer {
   font-family: 'Oswald', sans-serif;
 }
 
-body {
-  padding-bottom: 0;
+/* Mid body: Background & Train tables */
+.background {
+  background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
   margin: 0;
+  z-index: -2;
+} 
+
+.layer {
+  background-image: linear-gradient(180deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  z-index: -1;
+} 
+
+.card {
+  border: 0;
+  z-index: 0;
+}
+
+.card-header {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 2px 1px 1px #dfdfdf;
+}
+
+#input-head,
+#current-head {
+  background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(113, 21, 9));
 }
 
 button {
@@ -27,6 +48,7 @@ button {
   font-family: 'Oswald', sans-serif;
 }
 
+/* Footer */
 .page-footer {
   background-image: linear-gradient(120deg, rgb(160, 57, 57), rgb(117, 20, 7));
   margin: 0;
@@ -36,30 +58,6 @@ button {
 .footer-copyright {
   padding-bottom: 10px;
   background-image: linear-gradient(120deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
-}
-
-.card {
-  border: 0;
-}
-
-.card-header {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 2rem;
-  text-shadow: 2px 1px 1px #dfdfdf;
-}
-
-.background {
-  background: url("http://www.pptbackgrounds.org/uploads/brick-seamless-orange-backgrounds-wallpapers.jpg");
-  position: relative;
-  margin: 0;
-  z-index: -2;
-}
-
-.layer {
-  background-image: linear-gradient(180deg, rgba(3, 0, 0, 0.814), rgba(3, 0, 0, 0.250));
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  z-index: -1;
 }
 
 /* parralax to override materialize.css */
